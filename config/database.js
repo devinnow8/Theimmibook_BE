@@ -1,7 +1,7 @@
 // strapi-api/config/database.js
 module.exports = ({ env }) => ({
   connection: {
-    client: "postgress",
+    client: "postgres",
     connection: {
       host: env("DATABASE_HOST", "localhost"),
       port: env.int("DATABASE_PORT", 5432),
