@@ -1,0 +1,77 @@
+{
+  "kind": "collectionType",
+  "collectionName": "jobs",
+  "info": {
+    "singularName": "job",
+    "pluralName": "jobs",
+    "displayName": "Job",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "companyImage": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
+    },
+    "CompanyName": {
+      "type": "string",
+      "required": true
+    },
+    "OpeningPosition": {
+      "type": "string",
+      "required": true
+    },
+    "JobLocation": {
+      "type": "string",
+      "required": true
+    },
+    "SelectJobType": {
+      "type": "enumeration",
+      "enum": [
+        "FullTime",
+        "Internship"
+      ],
+      "default": "FullTime",
+      "required": true
+    },
+    "EnterSalaryAmount": {
+      "type": "float"
+    },
+    "SelectSalaryPeriod": {
+      "type": "enumeration",
+      "enum": [
+        "PerWeek",
+        "PerMonth",
+        "PerYear"
+      ],
+      "default": "PerMonth"
+    },
+    "FullJobDescription": {
+      "type": "text",
+      "required": false,
+      "maxLength": 2000,
+      "minLength": 50
+    },
+    "WriteAboutTheCompany": {
+      "type": "text",
+      "maxLength": 2000,
+      "minLength": 50
+    }
+  }
+}
