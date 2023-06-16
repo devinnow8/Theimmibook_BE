@@ -64,6 +64,23 @@
       "target": "plugin::users-permissions.role",
       "inversedBy": "users",
       "configurable": false
+    },
+    "applications": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::application.application",
+      "inversedBy": "users"
+    },
+    "application": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::application.application"
+    },
+    "jobs": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::job.job",
+      "mappedBy": "users_permissions_users"
     }
   }
 }

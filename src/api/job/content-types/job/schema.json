@@ -29,19 +29,19 @@
         "videos"
       ]
     },
-    "CompanyName": {
+    "companyName": {
       "type": "string",
       "required": true
     },
-    "OpeningPosition": {
+    "openingPosition": {
       "type": "string",
       "required": true
     },
-    "JobLocation": {
+    "jobLocation": {
       "type": "string",
       "required": true
     },
-    "SelectJobType": {
+    "jobType": {
       "type": "enumeration",
       "enum": [
         "FullTime",
@@ -50,10 +50,10 @@
       "default": "FullTime",
       "required": true
     },
-    "EnterSalaryAmount": {
+    "salaryAmount": {
       "type": "float"
     },
-    "SelectSalaryPeriod": {
+    "salaryPeriod": {
       "type": "enumeration",
       "enum": [
         "PerWeek",
@@ -62,16 +62,33 @@
       ],
       "default": "PerMonth"
     },
-    "FullJobDescription": {
+    "jobDescription": {
       "type": "text",
       "required": false,
       "maxLength": 2000,
       "minLength": 50
     },
-    "WriteAboutTheCompany": {
+    "aboutTheCompany": {
       "type": "text",
       "maxLength": 2000,
       "minLength": 50
+    },
+    "users_permissions_users": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "jobs"
+    },
+    "applications": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::application.application",
+      "inversedBy": "jobs"
+    },
+    "application": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::application.application"
     }
   }
 }
