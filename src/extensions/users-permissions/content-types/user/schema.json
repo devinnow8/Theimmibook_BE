@@ -78,9 +78,9 @@
     },
     "jobs": {
       "type": "relation",
-      "relation": "manyToMany",
+      "relation": "oneToMany",
       "target": "api::job.job",
-      "mappedBy": "users_permissions_users"
+      "mappedBy": "users_permissions_user"
     }
   }
 }
