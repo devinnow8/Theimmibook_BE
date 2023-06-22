@@ -65,12 +65,6 @@
       "inversedBy": "users",
       "configurable": false
     },
-    "applications": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::application.application",
-      "inversedBy": "users"
-    },
     "application": {
       "type": "relation",
       "relation": "oneToOne",
@@ -81,6 +75,12 @@
       "relation": "oneToMany",
       "target": "api::job.job",
       "mappedBy": "users_permissions_user"
+    },
+    "applications": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::application.application",
+      "mappedBy": "users_permissions_users"
     }
   }
 }

@@ -4,7 +4,8 @@
   "info": {
     "singularName": "application",
     "pluralName": "applications",
-    "displayName": "application"
+    "displayName": "application",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -32,30 +33,34 @@
       "required": true
     },
     "resume": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "files"
-      ],
-      "type": "media",
-      "multiple": false,
-      "required": true
+      ]
     },
-    "secondStep": {
-      "displayName": " education",
+    "experience": {
       "type": "component",
-      "repeatable": false,
-      "component": "second-step.education"
+      "repeatable": true,
+      "component": "add-education.education"
     },
-    "users": {
+    "eeduField": {
+      "displayName": "eeducation",
+      "type": "component",
+      "repeatable": true,
+      "component": "add-education.eeducation"
+    },
+    "users_permissions_users": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "plugin::users-permissions.user",
-      "mappedBy": "applications"
+      "inversedBy": "applications"
     },
-    "jobs": {
+    "admin_users": {
       "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::job.job",
-      "mappedBy": "applications"
+      "relation": "oneToMany",
+      "target": "admin::user"
     }
   }
 }

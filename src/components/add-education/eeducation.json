@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_add_education_eeducations",
+  "info": {
+    "displayName": "eeducation"
+  },
+  "options": {},
+  "attributes": {
+    "institute": {
+      "type": "string"
+    },
+    "coures": {
+      "type": "string"
+    },
+    "started": {
+      "type": "date"
+    },
+    "ended": {
+      "type": "date"
+    }
+  }
+}

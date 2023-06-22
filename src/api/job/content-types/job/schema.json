@@ -73,12 +73,6 @@
       "maxLength": 2000,
       "minLength": 50
     },
-    "applications": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::application.application",
-      "inversedBy": "jobs"
-    },
     "application": {
       "type": "relation",
       "relation": "oneToOne",

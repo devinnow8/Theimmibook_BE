@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_add_education_educations",
+  "info": {
+    "displayName": "experience",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "job": {
+      "type": "string"
+    },
+    "companyName": {
+      "type": "string"
+    },
+    "started": {
+      "type": "date"
+    },
+    "ended": {
+      "type": "date"
+    },
+    "adress": {
+      "type": "string"
+    },
+    "discription": {
+      "type": "text"
+    }
+  }
+}
