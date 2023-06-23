@@ -1,7 +1,8 @@
 {
   "collectionName": "components_application_experiences",
   "info": {
-    "displayName": "experience"
+    "displayName": "experience",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -9,6 +10,18 @@
       "type": "string"
     },
     "companyName": {
+      "type": "string"
+    },
+    "started": {
+      "type": "date"
+    },
+    "ended": {
+      "type": "date"
+    },
+    "address": {
+      "type": "string"
+    },
+    "discription": {
       "type": "string"
     }
   }
