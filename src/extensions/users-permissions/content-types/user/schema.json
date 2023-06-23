@@ -76,11 +76,11 @@
       "target": "api::job.job",
       "mappedBy": "users_permissions_user"
     },
-    "reported_jobs": {
+    "applications": {
       "type": "relation",
       "relation": "manyToMany",
-      "target": "api::job.job",
-      "mappedBy": "reported_by"
+      "target": "api::application.application",
+      "mappedBy": "users_permissions_users"
     }
   }
 }

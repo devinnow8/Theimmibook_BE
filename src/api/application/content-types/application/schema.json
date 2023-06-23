@@ -51,11 +51,16 @@
       "repeatable": true,
       "component": "add-education.eeducation"
     },
-    "jobs": {
+    "users_permissions_users": {
       "type": "relation",
       "relation": "manyToMany",
-      "target": "api::job.job",
+      "target": "plugin::users-permissions.user",
       "inversedBy": "applications"
+    },
+    "admin_users": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "admin::user"
     }
   }
 }
