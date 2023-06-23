@@ -73,16 +73,11 @@
       "maxLength": 2000,
       "minLength": 50
     },
-    "application": {
+    "reported_by": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::application.application"
-    },
-    "users_permissions_user": {
-      "type": "relation",
-      "relation": "manyToOne",
+      "relation": "manyToMany",
       "target": "plugin::users-permissions.user",
-      "inversedBy": "jobs"
+      "inversedBy": "reported_jobs"
     }
   }
 }

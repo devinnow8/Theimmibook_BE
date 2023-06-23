@@ -65,22 +65,11 @@
       "inversedBy": "users",
       "configurable": false
     },
-    "application": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::application.application"
-    },
-    "jobs": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::job.job",
-      "mappedBy": "users_permissions_user"
-    },
-    "applications": {
+    "reported_jobs": {
       "type": "relation",
       "relation": "manyToMany",
-      "target": "api::application.application",
-      "mappedBy": "users_permissions_users"
+      "target": "api::job.job",
+      "mappedBy": "reported_by"
     }
   }
 }

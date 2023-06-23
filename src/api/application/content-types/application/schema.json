@@ -40,27 +40,15 @@
         "files"
       ]
     },
-    "experience": {
+    "education": {
       "type": "component",
       "repeatable": true,
-      "component": "add-education.education"
+      "component": "application.education"
     },
-    "eeduField": {
-      "displayName": "eeducation",
+    "experiences": {
       "type": "component",
       "repeatable": true,
-      "component": "add-education.eeducation"
-    },
-    "users_permissions_users": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "plugin::users-permissions.user",
-      "inversedBy": "applications"
-    },
-    "admin_users": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "admin::user"
+      "component": "application.experience"
     }
   }
 }

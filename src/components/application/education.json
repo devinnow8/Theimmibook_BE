@@ -1,7 +1,7 @@
 {
-  "collectionName": "components_add_education_eeducations",
+  "collectionName": "components_application_educations",
   "info": {
-    "displayName": "eeducation"
+    "displayName": "education"
   },
   "options": {},
   "attributes": {
