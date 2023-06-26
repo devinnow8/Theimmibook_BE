@@ -1,12 +1,46 @@
-module.exports = {
+// module.exports = {
+//     // ...
+//     'seo': {
+//       enabled: true,
+//       resolve: './src/plugins/seo'
+//     },
+//     // ...
+//     // 'seo-backup':{
+//     //     enabled:false,
+//     //     resolve:'.src/plugins/seo-backup'
+//     // },
+
+//     upload: {
+//       config: {
+//         provider: 'cloudinary',
+//         providerOptions: {
+//           cloud_name: env('CLOUDINARY_NAME'),
+//           api_key: env('CLOUDINARY_KEY'),
+//           api_secret: env('CLOUDINARY_SECRET'),
+//         },
+//         actionOptions: {
+//           upload: {},
+//           delete: {},
+//         },
+//       },
+//     },
+
+//   }
+  module.exports = ({ env }) => ({
     // ...
-    'seo': {
-      enabled: true,
-      resolve: './src/plugins/seo'
+    upload: {
+      config: {
+        provider: 'cloudinary',
+        providerOptions: {
+          cloud_name: env('CLOUDINARY_NAME'),
+          api_key: env('CLOUDINARY_KEY'),
+          api_secret: env('CLOUDINARY_SECRET'),
+        },
+        actionOptions: {
+          upload: {},
+          delete: {},
+        },
+      },
     },
     // ...
-    // 'seo-backup':{
-    //     enabled:false,
-    //     resolve:'.src/plugins/seo-backup'
-    // },
-  }
+  });

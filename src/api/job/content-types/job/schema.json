@@ -16,21 +16,26 @@
       "type": "media",
       "multiple": false,
       "required": false,
-      "allowedTypes": ["images"]
+      "allowedTypes": [
+        "images"
+      ]
     },
     "companyImage": {
       "type": "media",
       "multiple": true,
       "required": false,
-      "allowedTypes": ["images", "videos"]
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
     },
     "companyName": {
       "type": "string",
       "required": true
     },
     "openingPosition": {
-      "type": "integer",
-      "min": 1
+      "type": "string",
+      "minLength": 1
     },
     "jobLocation": {
       "type": "string",
@@ -39,7 +44,10 @@
     },
     "jobType": {
       "type": "enumeration",
-      "enum": ["FullTime", "Internship"],
+      "enum": [
+        "FullTime",
+        "Internship"
+      ],
       "default": "FullTime",
       "required": true
     },
@@ -49,7 +57,11 @@
     },
     "salaryPeriod": {
       "type": "enumeration",
-      "enum": ["PerWeek", "PerMonth", "PerYear"],
+      "enum": [
+        "PerWeek",
+        "PerMonth",
+        "PerYear"
+      ],
       "default": "PerMonth"
     },
     "jobDescription": {

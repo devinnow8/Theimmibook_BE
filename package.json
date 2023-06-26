@@ -16,6 +16,7 @@
     "@strapi/provider-email-nodemailer": "^4.11.1",
     "@strapi/provider-email-sendgrid": "^4.11.1",
     "@strapi/provider-upload-aws-s3": "^4.11.1",
+    "@strapi/provider-upload-cloudinary": "^4.11.2",
     "@strapi/strapi": "4.11.0",
     "better-sqlite3": "8.0.1",
     "nodemailer": "^6.9.3",
