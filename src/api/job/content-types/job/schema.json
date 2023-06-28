@@ -43,7 +43,8 @@
       "displayName": "companyAddress",
       "type": "component",
       "repeatable": false,
-      "component": "job.company-address"
+      "component": "job.company-address",
+      "required": true
     },
     "aboutTheCompany": {
       "type": "text",
