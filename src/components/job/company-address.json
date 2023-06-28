@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_job_company_addresses",
+  "info": {
+    "displayName": "companyAddress"
+  },
+  "options": {},
+  "attributes": {
+    "building": {
+      "type": "string",
+      "required": true,
+      "minLength": 3
+    },
+    "city": {
+      "type": "string",
+      "minLength": 2
+    },
+    "pincode": {
+      "type": "biginteger",
+      "required": true,
+      "min": "1"
+    },
+    "state": {
+      "type": "string",
+      "required": true,
+      "minLength": 2
+    },
+    "country": {
+      "type": "string",
+      "required": true,
+      "minLength": 2
+    }
+  }
+}
