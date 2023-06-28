@@ -45,7 +45,7 @@
       "repeatable": false,
       "component": "job.company-address"
     },
-    "About": {
+    "aboutTheCompany": {
       "type": "text",
       "minLength": 3
     },
@@ -62,11 +62,11 @@
     "jobType": {
       "type": "enumeration",
       "enum": [
-        "partTime",
-        "fullTime",
-        "casual",
-        "contract",
-        "other"
+        "Part Time",
+        "Full Time",
+        "Casual",
+        "Contract",
+        "Other"
       ],
       "required": true
     },
@@ -75,13 +75,13 @@
       "required": false,
       "minLength": 2
     },
-    "SalaryPeriod": {
+    "salaryPeriod": {
       "type": "enumeration",
       "enum": [
-        "per-week",
-        "fortnightly",
-        "per-month",
-        "per-annum"
+        "Per Week",
+        "Fortnightly",
+        "Per Month",
+        "Per Annum"
       ],
       "required": true
     },
