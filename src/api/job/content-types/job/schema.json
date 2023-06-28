@@ -33,48 +33,6 @@
       "type": "string",
       "required": true
     },
-    "openingPosition": {
-      "type": "string",
-      "minLength": 1
-    },
-    "jobLocation": {
-      "type": "string",
-      "required": true,
-      "minLength": 3
-    },
-    "jobType": {
-      "type": "enumeration",
-      "enum": [
-        "FullTime",
-        "Internship"
-      ],
-      "default": "FullTime",
-      "required": true
-    },
-    "salaryAmount": {
-      "type": "float",
-      "min": 1
-    },
-    "salaryPeriod": {
-      "type": "enumeration",
-      "enum": [
-        "PerWeek",
-        "PerMonth",
-        "PerYear"
-      ],
-      "default": "PerMonth"
-    },
-    "jobDescription": {
-      "type": "text",
-      "required": false,
-      "maxLength": 2000,
-      "minLength": 50
-    },
-    "aboutTheCompany": {
-      "type": "text",
-      "maxLength": 2000,
-      "minLength": 50
-    },
     "reported_by": {
       "type": "relation",
       "relation": "manyToMany",
