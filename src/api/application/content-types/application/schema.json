@@ -20,10 +20,6 @@
       "type": "string",
       "required": true
     },
-    "address": {
-      "type": "string",
-      "required": true
-    },
     "phoneNo": {
       "type": "biginteger",
       "required": true
@@ -49,6 +45,15 @@
       "type": "component",
       "repeatable": true,
       "component": "application.experience"
+    },
+    "preffredName": {
+      "type": "string",
+      "minLength": 1
+    },
+    "address": {
+      "type": "component",
+      "repeatable": false,
+      "component": "job.company-address"
     }
   }
 }
