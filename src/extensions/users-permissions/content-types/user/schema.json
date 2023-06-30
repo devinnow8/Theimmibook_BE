@@ -75,6 +75,11 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::job.job"
+    },
+    "saved_accommodations": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::accommodation.accommodation"
     }
   }
 }

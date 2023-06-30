@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_accommodation_features",
+  "info": {
+    "displayName": "feature"
+  },
+  "options": {},
+  "attributes": {
+    "room": {
+      "type": "integer",
+      "min": 1
+    },
+    "bathroom": {
+      "type": "integer",
+      "min": 0
+    },
+    "kitchen": {
+      "type": "integer",
+      "min": 0
+    },
+    "parking": {
+      "type": "integer",
+      "min": 0
+    }
+  }
+}

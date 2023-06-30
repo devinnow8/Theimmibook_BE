@@ -1,0 +1,62 @@
+{
+  "kind": "collectionType",
+  "collectionName": "accommodations",
+  "info": {
+    "singularName": "accommodation",
+    "pluralName": "accommodations",
+    "displayName": "accommodation",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "heading": {
+      "type": "string",
+      "minLength": 1
+    },
+    "address": {
+      "type": "component",
+      "repeatable": false,
+      "component": "job.company-address",
+      "required": true
+    },
+    "feature": {
+      "displayName": "feature",
+      "type": "component",
+      "repeatable": false,
+      "component": "accommodation.feature"
+    },
+    "rent": {
+      "type": "integer",
+      "min": 0
+    },
+    "duration": {
+      "type": "enumeration",
+      "enum": [
+        "Per Day",
+        "Per Weak",
+        "Per Month"
+      ],
+      "default": "Per Month"
+    },
+    "aboutProperty": {
+      "type": "text",
+      "minLength": 3
+    },
+    "notes": {
+      "type": "text",
+      "default": "e.g. minimum 3 month stay",
+      "minLength": 2
+    }
+  }
+}
