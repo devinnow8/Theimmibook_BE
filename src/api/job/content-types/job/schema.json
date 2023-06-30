@@ -78,6 +78,10 @@
     "jobDescription": {
       "type": "text",
       "minLength": 2
+    },
+    "salaryAmount": {
+      "type": "integer",
+      "min": 0
     }
   }
 }
