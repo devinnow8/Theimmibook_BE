@@ -65,11 +65,6 @@
       "required": true,
       "minLength": 1
     },
-    "other": {
-      "type": "string",
-      "required": false,
-      "minLength": 2
-    },
     "salaryPeriod": {
       "type": "enumeration",
       "enum": [
