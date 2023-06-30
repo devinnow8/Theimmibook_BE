@@ -61,15 +61,9 @@
       "required": true
     },
     "jobType": {
-      "type": "enumeration",
-      "enum": [
-        "Part Time",
-        "Full Time",
-        "Casual",
-        "Contract",
-        "Other"
-      ],
-      "required": true
+      "type": "string",
+      "required": true,
+      "minLength": 1
     },
     "other": {
       "type": "string",
