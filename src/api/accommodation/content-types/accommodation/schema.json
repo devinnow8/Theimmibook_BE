@@ -51,7 +51,7 @@
     },
     "aboutProperty": {
       "type": "text",
-      "minLength": 3
+      "minLength": 2
     },
     "notes": {
       "type": "text",
