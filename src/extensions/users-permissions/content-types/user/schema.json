@@ -80,6 +80,11 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::accommodation.accommodation"
+    },
+    "fullName": {
+      "type": "string",
+      "required": true,
+      "minLength": 1
     }
   }
 }
