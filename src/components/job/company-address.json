@@ -1,7 +1,8 @@
 {
   "collectionName": "components_job_company_addresses",
   "info": {
-    "displayName": "companyAddress"
+    "displayName": "companyAddress",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -12,7 +13,8 @@
     },
     "city": {
       "type": "string",
-      "minLength": 2
+      "minLength": 2,
+      "required": true
     },
     "pincode": {
       "type": "biginteger",
