@@ -16,18 +16,13 @@
       "type": "media",
       "multiple": false,
       "required": false,
-      "allowedTypes": [
-        "images"
-      ]
+      "allowedTypes": ["images", "files"]
     },
     "companyImage": {
       "type": "media",
       "multiple": true,
       "required": false,
-      "allowedTypes": [
-        "images",
-        "videos"
-      ]
+      "allowedTypes": ["images", "videos", "files"]
     },
     "companyName": {
       "type": "string",
@@ -67,12 +62,7 @@
     },
     "salaryPeriod": {
       "type": "enumeration",
-      "enum": [
-        "Per Week",
-        "Fortnightly",
-        "Per Month",
-        "Per Annum"
-      ],
+      "enum": ["Per Week", "Fortnightly", "Per Month", "Per Annum"],
       "required": true
     },
     "jobDescription": {
