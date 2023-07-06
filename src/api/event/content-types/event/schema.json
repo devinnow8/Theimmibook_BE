@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "events",
+  "info": {
+    "singularName": "event",
+    "pluralName": "events",
+    "displayName": "Event"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "description": {
+      "type": "text",
+      "minLength": 3,
+      "maxLength": 2000
+    },
+    "Address": {
+      "type": "component",
+      "repeatable": false,
+      "component": "job.company-address"
+    },
+    "Date": {
+      "type": "date"
+    },
+    "time": {
+      "type": "time"
+    }
+  }
+}

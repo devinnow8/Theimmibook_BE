@@ -85,6 +85,11 @@
       "type": "string",
       "required": true,
       "minLength": 1
+    },
+    "saved_events": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::event.event"
     }
   }
 }
