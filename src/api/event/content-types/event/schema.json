@@ -4,7 +4,8 @@
   "info": {
     "singularName": "event",
     "pluralName": "events",
-    "displayName": "Event"
+    "displayName": "Event",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,14 +13,15 @@
   "pluginOptions": {},
   "attributes": {
     "Image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "description": {
       "type": "text",
@@ -36,6 +38,9 @@
     },
     "time": {
       "type": "time"
+    },
+    "title": {
+      "type": "string"
     }
   }
 }
