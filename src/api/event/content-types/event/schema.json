@@ -33,13 +33,13 @@
       "repeatable": false,
       "component": "job.company-address"
     },
-    "Date": {
-      "type": "date"
+    "title": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string"
     },
     "time": {
-      "type": "time"
-    },
-    "title": {
       "type": "string"
     }
   }
