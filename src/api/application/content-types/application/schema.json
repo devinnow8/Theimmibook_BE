@@ -33,7 +33,8 @@
       "multiple": true,
       "required": false,
       "allowedTypes": [
-        "files"
+        "files",
+        "images"
       ]
     },
     "education": {
