@@ -90,6 +90,10 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::event.event"
+    },
+    "phone": {
+      "type": "biginteger",
+      "min": "0"
     }
   }
 }
