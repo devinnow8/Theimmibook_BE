@@ -80,7 +80,7 @@
       "type": "text"
     },
     "salaryAmount": {
-      "type": "integer",
+      "type": "float",
       "min": 0
     }
   }
