@@ -44,14 +44,15 @@
       "type": "text",
       "minLength": 2
     },
-    "notes": {
-      "type": "text",
-      "default": "e.g. minimum 3 month stay",
-      "minLength": 2
-    },
     "duration": {
       "type": "string",
       "minLength": 1
+    },
+    "notes": {
+      "displayName": "notes",
+      "type": "component",
+      "repeatable": true,
+      "component": "accommodation.notes"
     }
   }
 }

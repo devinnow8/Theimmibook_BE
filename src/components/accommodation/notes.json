@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_accommodation_notes",
+  "info": {
+    "displayName": "notes"
+  },
+  "options": {},
+  "attributes": {
+    "notes": {
+      "type": "text"
+    }
+  }
+}
